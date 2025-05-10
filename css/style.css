@@ -1,0 +1,301 @@
+* {
+  box-sizing: border-box;
+}
+
+/* navbar css */
+.navbar {
+  transition: all 0.4s ease;
+  z-index: 4;
+}
+
+.scrolled {
+  background: linear-gradient(rgb(202, 202, 202),rgb(68, 68, 68)) !important;
+  box-shadow: 0px 0px 10px 3px rgb(0, 0, 0);
+}
+
+.nav-link {
+  transition: all 0.4s ease;
+  font-weight: 700;
+  color: #fff;
+}
+
+.nav-link:hover {
+  font-weight: 700;
+  color: rgb(201, 201, 201);
+}
+
+.nav-link.active {
+  font-weight: 700;
+  color: rgb(255, 255, 255) !important;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  text-shadow: 0px 0px 5px rgb(0, 0, 0);
+}
+
+.started-btn {
+  background: rgb(160, 160, 160);
+  color: #fff;
+  box-shadow: 1px 1px 5px 1px rgb(0, 0, 0);
+  transition: all 0.2s ease;
+}
+
+.started-btn:hover {
+  background: rgb(160, 160, 160);
+  color: #fff;
+  box-shadow: 1px 1px 5px 1px rgb(0, 0, 0);
+  transform: scale(1.03);
+}
+
+/* home css */
+.carousel-section {
+  background-color: black;
+}
+
+.home-btn {
+  font-size: 30px;
+}
+
+.carousel-content {
+  color: rgb(255, 255, 255);
+  padding: 7rem 0.3rem 0 3rem;
+  transition: all 1s ease;
+  animation: carouseltext;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: inherit;
+  animation-direction: reverse;
+}
+
+@keyframes carouseltext {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 100px);
+    opacity: 0;
+  }
+}
+
+.carousel-img-div {
+  padding: 0 3rem 0 0.3rem;
+}
+
+.carousel-img {
+  filter: drop-shadow(#2b1a01);
+  transition: all 1s ease;
+  animation: carouselimg;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: inherit;
+  animation-direction: reverse;
+}
+
+@keyframes carouselimg {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 100px);
+    opacity: 0;
+  }
+}
+
+.carousel-1 {
+  background: linear-gradient(rgb(0, 0, 0, 0.7),rgb(0, 0, 0, 0.7)),url(/images/carousel-img-1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  padding: 9.4rem 0;
+  transition: all 1s ease;
+}
+
+.carousel-2 {
+  background: linear-gradient(rgb(0, 0, 0, 0.7),rgb(0, 0, 0, 0.7)),url(/images/carousel-img-2.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  padding: 9.4rem 0;
+  transition: all 1s ease;
+}
+
+.carousel-3 {
+  background: linear-gradient(rgb(0, 0, 0, 0.7),rgb(0, 0, 0, 0.7)),url(/images/carousel-img-3.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  padding: 9.4rem 0;
+  transition: all 1s ease;
+}
+
+
+/* about css */
+.about-section {
+  transition: all 1s ease;
+  padding: 6rem 0 2rem 0;
+}
+
+.carousel-indicators button {
+  color: rgb(0, 0, 0) !important;
+  background-color: rgb(134, 134, 134) !important;
+}
+
+.about-btn {
+  width: 50px;
+}
+
+.about-caro-prev,
+.about-caro-next {
+  font-size: 25px;
+  background-color: rgb(134, 134, 134);
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 50px;
+  padding: 5px 10px;
+}
+
+
+/* contact css */
+.contact-section {
+  background-color: rgb(134, 134, 134);
+  padding: 6rem 0 2rem 0;
+}
+
+.map,
+.address-div,
+.call-div {
+  box-shadow: 1px 1px 15px 1px rgb(0, 0, 0);
+  transition: all 0.4s ease;
+}
+
+.map:hover,
+.address-div:hover,
+.call-div:hover {
+  transform: scale(1.07) !important;
+  color: rgb(0, 82, 150);
+}
+
+.address-link:hover,
+.call-link:hover {
+  text-shadow: 0px 0px 5px rgb(0, 82, 150);
+  color: rgb(0, 82, 150) !important;
+}
+
+
+/* footer css */
+.footer-section {
+  background-color: rgb(68, 68, 68);
+  padding: 3rem 0 0 0;
+}
+
+.useful-links {
+  color: #fff;
+}
+
+.useful-links:hover {
+  color: rgb(126, 126, 126);
+}
+
+.media-link {
+  transition: all 0.4s ease;
+  font-size: 50px;
+  color: #fff;
+}
+
+.media-link:hover {
+  color: rgb(126, 126, 126);
+}
+
+.footer-refference {
+  background: linear-gradient(rgb(102, 102, 102),rgb(26, 26, 26));
+  margin-top: 3rem;
+  padding: 1rem;
+}
+
+/* fixed btn */
+.main-btn {
+  position: fixed;
+  background: rgb(134, 134, 134);
+  color: #fff;
+  box-shadow: 0px 0px 5px 1px rgb(0, 0, 0);
+  z-index: 2;
+  top: 90%;
+  right: 3%;
+  transition: all 0.4s ease;
+}
+
+.main-btn:hover {
+  transform: scale(1.2);
+  background: rgba(0, 22, 51, 0.788);
+  color: #fff;
+}
+
+/* responsiveness */
+@media (max-width: 576px) {
+  .carousel-section {
+    text-align: center !important;
+  }
+
+  .carousel-content {
+    padding: 10% 15% 19% 15%;
+  }
+
+  .carousel-img-div {
+    padding: 8% 15%;
+  }
+
+  .small-content-1,
+  .small-title-1,
+  .small-title-2,
+  .small-para-1 {
+    text-align: center;
+  }
+
+  .footer-section {
+    text-align: center;
+  }
+}
+
+/* Medium devices (md) */
+@media (max-width: 768px) {
+  .carousel-section {
+    text-align: center !important;
+  }
+
+  .carousel-content {
+    padding: 5% 15% 8% 15%;
+  }
+
+  .carousel-img-div {
+    padding: 8% 15%;
+  }
+}
+
+/* Large devices (lg) */
+@media (max-width: 991px) {
+  .navbar-toggler {
+    background: #ffffffad;
+    /* color: #fff; */
+  }
+  .navbar-nav {
+    background-color: rgb(134, 134, 134);
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 10px 20px;
+  }
+  .started-btn-div {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* Extra large devices (xl) */
+@media (max-width: 1200px) {  
+}
+
+/* Extra extra large devices (xxl) */
+@media (max-width: 1400px) {
+}
+
+
+
